@@ -1,0 +1,70 @@
+{% extends 'layout.html' %}
+{% block sblock %}
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="margin: auto;background:palevioletred"><p id="panelHead"></p></div>
+                <div class="panel-body">
+                    <div class="row">
+                    
+                        <div class="col-sm-2">Name :</div>
+                        <div class="col-sm-3">{{n}}</div>
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-2">Reg.No :</div>
+                        <div class="col-sm-2">{{r}}</div>
+                        
+                        
+                    </div>
+                    <br>
+                    <div class="row">
+                        
+                        <div class="col-sm-2">Semester :</div>
+                        <div class="col-sm-3">{{s}}</div>
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-2">College :</div>
+                        <div class="col-sm-2">{{c}}</div>
+                    
+                    </div>
+                    <br>
+                    <div class="row">
+                        <table class="table">
+                            <tr>
+                                <td>Subject</td>
+                                <td>Mark Obtained</td>
+                                <td>Total Marks</td>
+                                <td>Grade</td>
+
+                            </tr>
+                            <tr>
+                                <td>{{s1}}</td>
+                                <td>{{s1m}}</td>
+                                <td>{{s1t}}</td>
+                                <td>{{g1}}</td>
+                            </tr>
+                            <tr>
+                                <td>{{s2}}</td>
+                                <td>{{s2m}}</td>
+                                <td>{{s2t}}</td>
+                                <td>{{g2}}</td>
+                            </tr>
+                            <tr>
+                                <td>{{s3}}</td>
+                                <td>{{s3m}}</td>
+                                <td>{{s3t}}</td>
+                                <td>{{g3}}</td>
+                            </tr>
+                            <tr>
+                                <td>{{s4}}</td>
+                                <td>{{s4m}}</td>
+                                <td>{{s4t}}</td>
+                                <td>{{g4}}</td>
+                            </tr>
+                        </table>
+                    </div><br>
+               
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    {% endblock %}
